@@ -1,21 +1,21 @@
 variable "credentials" {
-  default = "../service-account/zango-terra.json"
+  default = "../service-account/ftptomongo_sa.json"
 }
 
 variable "cluster_name" {
-  default = "zango-cluster-go"
+  default = "ftptomongo-cluster"
 }
 
 variable "project" {
-  default = ""
+  default = "pr-ftptomongo"
 }
 
 variable "location" {
-  default = "europe-central2"
+  default = "europe-west1"
 }
 
 variable "zone" {
-  default = "europe-central2-a"
+  default = "europe-west1-b"
 }
 
 variable "initial_node_count" {
@@ -27,5 +27,5 @@ variable "machine_type" {
 }
 
 variable "service_account_name" {
-  default = "zango-terra"
+  default = "ftptomongo-sa"
 }
