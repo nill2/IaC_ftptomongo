@@ -14,7 +14,7 @@ resource "google_service_account" "service_account" {
 resource "google_container_cluster" "default" {
   name        = var.cluster_name
   project     = var.project
-  description = "ftptomongo cluster"
+  description = "ftptomongo-cluster"
   location    = var.location
 
   remove_default_node_pool = true
