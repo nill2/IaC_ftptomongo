@@ -1,5 +1,5 @@
 variable "credentials" {
-  default = "../service-account/ftptomongo_sa.json"
+  default = "./service-account/key-file.json"
 }
 
 variable "cluster_name" {
@@ -7,7 +7,12 @@ variable "cluster_name" {
 }
 
 variable "project" {
-  default = "pr-ftptomongo"
+  default = "smooth-verve-400915"
+}
+
+variable "project_id" {
+  description = "smooth-verve-400915"
+  type        = string
 }
 
 variable "location" {
@@ -23,9 +28,13 @@ variable "initial_node_count" {
 }
 
 variable "machine_type" {
-  default =  "f1-micro" 
+  default =  "g1-small" 
 }
 
 variable "service_account_name" {
   default = "ftptomongo-sa"
+}
+
+variable "service_account_ID" {
+  default = ""
 }
