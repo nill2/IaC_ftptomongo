@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "smooth-verve-400915",
+  "private_key_id": "9cbffa44b9889f5239e6a69f740447cbd6b94beb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCOB78XEQHXd+jR\nls17vmCRwBVNQPgBE7jZAbfMeDEy0KdQhA6M309c80jWtg9+3VkDqbVP7THGoRLJ\nTUH7cNTA9RUNuzfOAvt36UZiIcpHTO5qS/P/OihWrt8HEPgEDn8sDPwrZKh+ald/\n2I0k4JT/TrtMU6WgzRVs/gB+auj1dHWqLgG2M1CWyl7NP9NQMFx8UxPJUQ0Z8WPm\nUufvCkKHlLeVgdc4Alt4+YovDRnC8BV+d0qYAelerlLXi6akpZoXZamuDbXWMrAz\nL+i0c6mlagRfgPQEGvgMsTZNyZ+W9Ssu/Tt4shWjzMJUsrsXK1rNNtHgy/wAxMtZ\n6n3tltEDAgMBAAECggEAKM7U+r2qN8x+Gmon1BwZBweXl0DJgRW3kLJLqvYFvMHy\nsNGglJ084koMbZSV0y+p+cFzFOnj2VxCV5BZGvOKTX6dc/qMyCZXNlbSIDPxOJdE\nEUqNapG9MVrBPfiEKjY4F+ILOjSLrPbE+TixJR1Z8hke+4k1F4SVWWGJpsj08kD8\nSRrapf5IVgT9IkiUPhFABb8QedVmNervcGZT2vfrc9iiAQmKU8yIMcPEk0hK1AR/\nGILBddgUxvzAZUHDALVUWtOic3HIQs3aZyaG5Pa2hRKnKpP7W/VYCYMO1Eu3T4Fv\ngVpbdqAsDIBD6Xz1YPQuQRi6cftvyxf8vq04JNRhQQKBgQDDuQhPqDENIo3dqQTT\npTzRmL/IN6vNF1YZ2jA8liQmqiQ4b1OPkj4WYLkPHkyQVHFapheq+0zachmttKp1\n+MNB6XRlbj9Tq0UUJYL/32QKHFmuGAWIf1b19U5gYz2Ny7zYKiGdEEIW5gCuNkV+\nz3Q1kBfxtmxHMYw+1UruspmqsQKBgQC5xYuOGN9YoadnBW1nLH6YJPs3ACZnsM0x\nXglu1JeajKekL/LLnN0YVbr/R4CVOmgsdhTSiDY0mIpuBUtI1mfj9uihOgLrePa6\nrwMab1icI7VTn//P6EYdkciUEbix2T2BA8ygKXgIyvQEG16YWVBSOM+l98YOEbR8\ncHm55FM78wKBgGhSk++BgsOxi1R+5qe5B3XgqTibE+O5cJdPCS8CCDrjrXK3RB7e\noGFlJL6+M6kqmVDr/umQESLOdol0JvfCpLDZMsVtwitiuutGI1EnTTdmbRayjyB2\nX2+yVRhjTUfrNLkzm78QD2oNJoe1Pc2d3h8+ssSPq5829b34Cny4jdfBAoGAVgNp\nQjmx78+pOsIAjazEUJ2O00B2h7wMxbbMl0xHhX9qf1LUEAJpPEM1ec0Zc/6/DRb/\nPRtkPaYDMj2xReA/6gUAYOYDRBOV6Ynu3eaAGItQAZArWZAqJrbBMA2kfnQfTgT8\nUYvhz/BoWx5xBgkUb31uZ2H5iboY3yUUt0VIZJECgYB3sHKjF5RJO1AHsLk3fQtL\neoi5vqELf7P0CtCUH2hRhgJaYZjT6I0cJ2ltor+lxkJdNwcx1HMjN+9lJadL1Sgf\nnW9RPkhBNAiJWAPCCzn8SlpD2CTi79dMch0aidevpqiF5o9XKlQ/cs5VIvTRvqqF\nBxs6UFmS95kpow1sktBtdQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ftptomongo-sa@smooth-verve-400915.iam.gserviceaccount.com",
+  "client_id": "115776823953053451953",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ftptomongo-sa%40smooth-verve-400915.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
