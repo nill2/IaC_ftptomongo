@@ -14,20 +14,20 @@ resource "google_service_account" "service_account" {
 resource "google_container_cluster" "default" {
   name        = var.cluster_name
   project     = var.project
-  description = "zango go cluster"
+  description = "ftptomongo-cluster"
   location    = var.location
 
   remove_default_node_pool = true
   initial_node_count       = var.initial_node_count
 
-  master_auth {
-    username = ""
-    password = ""
+#  master_auth {
+#    username = ""
+#    password = ""
 
-    client_certificate_config {
-      issue_client_certificate = false
-    }
-  }
+ #   client_certificate_config {
+ #     issue_client_certificate = false
+ #   }
+ # }
 }
 
 # create node pool
