@@ -52,37 +52,37 @@ In the `variables.tf` file, you can configure the following variables:
 
 1. **Initialize Terraform**:
 
-Run the following command to initialize Terraform:
+    Run the following command to initialize Terraform:
 
-```shell
-terraform init
-```
+    ```shell
+    terraform init
+    ```
 
 2. **Apply Configuration**:
 
-Apply the Terraform configuration to create the infrastructure:
+    Apply the Terraform configuration to create the infrastructure:
 
-```shell
-terraform apply
-```
+    ```shell
+    terraform apply
+    ```
 
 3. **Access Kubernetes Cluster**:
 
-After successful deployment, configure `kubectl` to access the GKE cluster:
+    After successful deployment, configure `kubectl` to access the GKE cluster:
 
-```shell
-gcloud container clusters get-credentials ftptomongo-cluster --zone europe-west1-b --project smooth-verve-400915
-```
+    ```shell
+    gcloud container clusters get-credentials ftptomongo-cluster --zone europe-west1-b --project smooth-verve-400915
+    ```
 
-Replace the cluster name, zone, and project with your configuration.
+    Replace the cluster name, zone, and project with your configuration.
 
 4. **Verify Resources**:
 
-Check the status of your resources and nodes:
+    Check the status of your resources and nodes:
 
-```shell
-kubectl get nodes
-```
+    ```shell
+    kubectl get nodes
+    ```
 
 ## Cleanup
 
