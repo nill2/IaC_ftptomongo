@@ -86,8 +86,10 @@ kubectl get nodes
 
 ## Cleanup
 
-```shell
 To destroy the created resources and infrastructure, run:
+
+```shell
+terraform destroy
 ```
 
 ## Contributing
