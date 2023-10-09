@@ -20,9 +20,9 @@ This repository contains Terraform configuration files to set up and manage the 
 Before you begin, make sure you have the following prerequisites:
 
 - [Terraform](https://www.terraform.io/downloads.html) installed locally.
-- A Google Cloud Platform (GCP) account with the necessary permissions.
-- Google Cloud SDK (`gcloud`) installed and configured with appropriate credentials.
-- A service account key file (JSON format) for GCP with permissions to create and manage resources.
+- A Google Cloud Platform (GCP) account with the service account created with t least the 'iam.serviceAccounts.create' permission to create a service account and other permissions like 'container.clusters.create' and 'container.clusters.get' to create and manage GKE clusters.
+- [Google Cloud SDK](https://cloud.google.com/sdk/docs/install) installed and configured with appropriate credentials.
+- A service account key file (JSON format) for GCP with permissions to create and manage resources. Should be named 'key-file.json' in the sub-directory './service-account'.
 
 ## Getting Started
 
