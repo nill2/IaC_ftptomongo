@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ftp-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ftp-server
+  template:
+    metadata:
+      labels:
+        app: ftp-server
+    spec:
+      containers:
+      - name: ftp-server
+        image: gcr.io/smooth-verve-400915/nill2/ftptomongo:latest
+        ports:
+        - containerPort: 2121
+        resources:
+          limits:
+            cpu: "1" # 1 CPU core
+            memory: "512Mi" # 512 Megabytes of memory
+          requests:
+            cpu: "0.5" # 0.5 CPU cores
+            memory: "256Mi" # 256 Megabytes of memory

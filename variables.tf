@@ -10,11 +10,6 @@ variable "project" {
   default = "smooth-verve-400915"
 }
 
-variable "project_id" {
-  description = "smooth-verve-400915"
-  type        = string
-}
-
 variable "location" {
   default = "europe-west1"
 }
