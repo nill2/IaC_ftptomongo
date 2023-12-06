@@ -11,7 +11,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: your-backend-service  # Replace with your service name
+                name: ftptomongo  # Replace with your service name
                 port:
                   number: 2121
   ingressClassName: "gce"
