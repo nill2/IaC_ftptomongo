@@ -1,5 +1,5 @@
 variable "credentials" {
-  default = "./service-account/key-file.json"
+  default = "./service-account/smooth-verve-400915-e8d164fda7a5.json"
 }
 
 variable "cluster_name" {
