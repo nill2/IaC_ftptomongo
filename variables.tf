@@ -11,11 +11,11 @@ variable "project" {
 }
 
 variable "location" {
-  default = "europe-west1"
+  default = "europe-west4"
 }
 
 variable "zone" {
-  default = "europe-west1-b"
+  default = "europe-west4-c"
 }
 
 variable "initial_node_count" {

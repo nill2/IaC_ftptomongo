@@ -19,7 +19,7 @@ resource "google_container_cluster" "ftptomongo_cluster" {
 
 resource "google_container_node_pool" "ftptomongo_node_pool" {
   name       = "ftptomongo-node-pool"
-  location   = "europe-west1"
+  location   = var.location
   cluster    = google_container_cluster.ftptomongo_cluster.name
   node_count = 1
 
@@ -28,8 +28,20 @@ resource "google_container_node_pool" "ftptomongo_node_pool" {
   }
 }
 
+
+resource "null_resource" "update_k8s_settings" {
+  depends_on = [google_container_cluster.ftptomongo_cluster]
+
+  #change ";" (for Windows) to "&&" for UNIX
+  provisioner "local-exec" {
+    command = <<-EOT
+      gcloud container clusters get-credentials ftptomongo-cluster --zone=europe-west4 ; 
+      kubectl config use-context gke_smooth-verve-400915_europe-west4_ftptomongo-cluster
+    EOT
+  }
+}
 locals {
-  passive_ports_list = range(52000, 52050)
+  passive_ports_list = range(51100, 52100)
 }
 
 provider "kubernetes" {
@@ -78,7 +90,7 @@ resource "kubernetes_deployment" "ftptomongo_pod" {
 
           volume_mount {
             name      = "ftp-data-volume"
-            mount_path = "/home/dir"
+            mount_path = "/app/ftp"
           }
 
           env {
