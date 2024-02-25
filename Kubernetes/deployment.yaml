@@ -1,22 +1,75 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ftp-server
+  name: ftptomongo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ftp-server
+      app: ftptomongo
   template:
     metadata:
       labels:
-        app: ftp-server
+        app: ftptomongo
     spec:
       containers:
-      - name: ftp-server
-        image: gcr.io/smooth-verve-400915/nill2/ftptomongo:latest
+      - name: ftptomongo
+        image: ghcr.io/nill2/nill2/ftptomongo:latest
         ports:
         - containerPort: 2121
+        - containerPort: 52000
+        - containerPort: 52001
+        - containerPort: 52002
+        - containerPort: 52003
+        - containerPort: 52004
+        - containerPort: 52005
+        - containerPort: 52006
+        - containerPort: 52007
+        - containerPort: 52008
+        - containerPort: 52009
+        - containerPort: 52010
+        - containerPort: 52011
+        - containerPort: 52012
+        - containerPort: 52013
+        - containerPort: 52014
+        - containerPort: 52015
+        - containerPort: 52016
+        - containerPort: 52017
+        - containerPort: 52018
+        - containerPort: 52019
+        - containerPort: 52020
+        - containerPort: 52021
+        - containerPort: 52022
+        - containerPort: 52023
+        - containerPort: 52024
+        - containerPort: 52025
+        - containerPort: 52026
+        - containerPort: 52027
+        - containerPort: 52028
+        - containerPort: 52029
+        - containerPort: 52030
+        - containerPort: 52031
+        - containerPort: 52032
+        - containerPort: 52033
+        - containerPort: 52034
+        - containerPort: 52035
+        - containerPort: 52036
+        - containerPort: 52037
+        - containerPort: 52038
+        - containerPort: 52039
+        - containerPort: 52040
+        - containerPort: 52041
+        - containerPort: 52042
+        - containerPort: 52043
+        - containerPort: 52044
+        - containerPort: 52045
+        - containerPort: 52046
+        - containerPort: 52047
+        - containerPort: 52048
+        - containerPort: 52049
+        - containerPort: 52050
+        securityContext:
+          runAsUser: 0
         resources:
           limits:
             cpu: "1" # 1 CPU core
